@@ -2,3 +2,4 @@
 en:
   label_lcm_auth_register_url: "Registration URL"
   label_lcm_auth_lost_password_url: "Lost Password URL"
+  label_lcm_auth_account_edit_message: "Account edit message"

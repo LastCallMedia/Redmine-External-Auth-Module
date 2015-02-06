@@ -9,6 +9,7 @@ Redmine::Plugin.register :lcm_auth_helper do
   settings :default => {
       'register_url' => '',
       'lost_password_url' => '',
+      'account_edit_message' => '<p>Change your first name, last name, and email settings on the central authentication server: LINK</p>'
     },
     :partial => 'settings/lcmauth'
 
