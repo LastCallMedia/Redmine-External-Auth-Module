@@ -14,12 +14,14 @@ module LCMAuthHelper
 
         module InstanceMethods
             def lost_password_with_lcm_auth
-                (redirect_to('http://google.com'); return) unless false
+                redirection = Setting.plugin_lcm_auth_helper['lost_password_url']
+                (redirect_to(redirection); return) unless redirection.empty?
                 lost_password_without_lcm_auth
             end
 
             def register_with_lcm_auth
-                (redirect_to('http://google.com'); return) unless false
+                redirection = redirection = Setting.plugin_lcm_auth_helper['register_url']
+                (redirect_to(redirection); return) unless redirection.empty?
                 register_without_lcm_auth
             end
         end

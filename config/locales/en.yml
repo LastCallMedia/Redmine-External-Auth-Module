@@ -1,3 +1,4 @@
 # English strings go here for Rails i18n
 en:
-  # my_label: "My label"
+  label_lcm_auth_register_url: "Registration URL"
+  label_lcm_auth_lost_password_url: "Lost Password URL"
