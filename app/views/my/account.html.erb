@@ -13,7 +13,7 @@
 <div class="splitcontentleft">
 <fieldset class="box tabular">
   <legend><%=l(:label_information_plural)%></legend>
-  <% if @user.auth_source.type == 'AuthSourceLdap' %>
+  <% if @user.auth_source_id == 1 %>
     <%= raw Setting.plugin_lcm_auth_helper['account_edit_message'] %>
   <% else %>
     <p><%= f.text_field :firstname, :required => true %></p>
