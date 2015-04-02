@@ -7,9 +7,9 @@ Redmine::Plugin.register :lcm_auth_helper do
   author_url 'http://example.com/about'
 
   settings :default => {
-      'register_url' => 'http://registry.lcmdev.com:8083',
-      'lost_password_url' => 'http://registry.lcmdev.com:8083/forgot',
-      'account_edit_message' => '<p>Change your first name, last name, and email settings on the central authentication server: <a href="http://registry.lcmdev.com:8083">http://registry.lcmdev.com:8083</a></p>'
+      'register_url' => 'https://portal.lastcallmedia.com/register',
+      'lost_password_url' => 'https://portal.lastcallmedia.com/forgot',
+      'account_edit_message' => '<p style="padding-left:0;">Change your first name, last name, and email settings on the central authentication server: <a href="http://portal.lastcallmedia.com">https://portal.lastcallmedia.com</a></p>'
     },
     :partial => 'settings/lcmauth'
 
