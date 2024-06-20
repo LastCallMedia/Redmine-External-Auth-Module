@@ -1,3 +1,0 @@
-= lcm_auth_helper
-
-Description goes here
